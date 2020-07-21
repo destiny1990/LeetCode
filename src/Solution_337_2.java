@@ -1,4 +1,4 @@
-import CommonClass.TreeNode;
+import common.TreeNode;
 
 import java.util.HashMap;
 
@@ -42,7 +42,7 @@ public class Solution_337_2 {
             return 0;
         if (memo.containsKey(root))
             return memo.get(root);
-        int money = root.val;
+        int money = root.getVal();
         if (root.left != null)
             money += rob_mid(root.left.left, memo) + rob_mid(root.left.right, memo);
         if (root.right != null)

@@ -1,4 +1,4 @@
-import CommonClass.TreeNode;
+import common.TreeNode;
 
 //337. 打家劫舍 III
 public class Solution_337_1 {
@@ -33,7 +33,7 @@ public class Solution_337_1 {
     public static int rob_mid(TreeNode root) {
         if (null == root)
             return 0;
-        int money = root.val;
+        int money = root.getVal();
         if (root.left != null)
             money += rob_mid(root.left.left) + rob_mid(root.left.right);
         if (root.right != null)

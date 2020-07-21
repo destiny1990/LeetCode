@@ -1,4 +1,4 @@
-import CommonClass.TreeNode;
+import common.TreeNode;
 
 //337. 打家劫舍 III
 public class Solution_337_3 {
@@ -42,7 +42,7 @@ public class Solution_337_3 {
         int[] left = rob_mid(root.left);
         int[] right = rob_mid(root.right);
         result[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
-        result[1] = root.val + left[0] + right[0];
+        result[1] = root.getVal() + left[0] + right[0];
         return result;
     }
 }
