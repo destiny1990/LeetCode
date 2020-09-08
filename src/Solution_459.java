@@ -4,7 +4,9 @@ public class Solution_459 {
         System.out.println(repeatedSubstringPattern(input));
         //System.out.println(input.substring(0, input.length()/2));
     }
-
+/*
+ * ！！！学习KMP算法！！！
+ */
     //    暴力法
 //    public static boolean repeatedSubstringPattern(String s) {
 //        for (int i = 1; i <= s.length() / 2; i++) {
